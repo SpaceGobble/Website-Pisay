@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Q2-FA1">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="hamburger">
+        <title>PSHS-CRC</title>
+        <style>
+            body{
+                background-image: url(https://img.freepik.com/premium-photo/white-art-paper-background_35956-2381.jpg);
+            }
+            .hamburger{
+                position: relative;
+                filter: blur(3px);
+            }
+            .cheeseburger{
+                width: 7%;
+                position: absolute;
+                top: 3%;
+                left: 2%;
+                display:inline;
+            }
+            .veggyburger{
+                position: absolute;
+                top: 5%;
+                left: 10%;
+            }
+            #impossible-burger{
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                justify-content: space-between;
+            }
+            #meat-like{
+                padding: 8px;
+                padding-left: 20px;
+                padding-right: 20px ;
+                border: 1px solid black;
+                position: absolute;
+                top: 32%;
+                text-decoration: none;
+                color: black;
+            }
+            #meat-like:link{
+                background-color: none;
+            }
+            #meat-like:visited{
+                background-color: none;
+            }
+            #meat-like:hover{
+                background-color: rgba(1, 82, 191, 30%);
+            }
+            #meat-like:active{
+                background-color: rgba(1, 82, 191, 50%);
+            }
+            .newspaperburger{
+                transition: 0.3s;
+                margin-left: 9%;
+                margin-right: 9%;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+                border-radius: 1px;
+            }
+            #a:hover{
+                display: inline;
+                transition: 0.3s;
+                margin-left: 2.25%;
+                margin-right: 2.25%;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                border-radius: 2px;
+
+            }
+            
+            #b:hover{
+                transition: 0.3s;
+                margin-left: 2.25%;
+                margin-right: 2.25%;
+                margin-top: 1%;
+                margin-bottom: 1%;
+                border-radius: 2px;
+                display: inline;
+            }
+            #b{
+                float:right;
+            }
+            .ab{
+                border: 3px solid lightblue;
+            }
+            #hamburgernews{
+                font-size: 175%;
+                text-decoration: underline;
+                position: absolute;
+                top:94%;
+                left: 44.5%;
+            }
+            #hamburgernews:link{
+
+                color:black;
+            }
+            #hamburgernews:visited{
+
+                color:black;
+            }
+            #hamburgernews:hover{
+
+                color:rgb(0, 168, 247);
+            }
+            #hamburgernews:active{
+
+                color:rgb(2, 119, 253);
+            }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://crc.pshs.edu.ph/images/banners/slider/Banner1.jpg" width=100% class="hamburger">
+            <img src="PSHS-Logo.png" class="cheeseburger">
+            <h2 class="veggyburger">PSHS - Caraga Region Campus</h2>
+            <div>
+                <ul id="impossible-burger">
+                    <li ></li>
+                    <li  ><a id="meat-like" href="index.html">Home</a></li>
+                    <li  ><a id="meat-like" href="map.html">Map</a></li>
+                    <li  ><a id="meat-like" href="newspaper.html">Events</a></li>
+                    <li  ><a id="meat-like" href="calendar.html">Calendar</a></li>
+                    <li  ><a id="meat-like" href="aboutUs.html">About Us</a></li>
+                    <li >
+                </ul>
+            </div>
+        </header>
+        <div>
+            <center><h1> Our Events</h1></center>
+            <div>
+                <!-- Videos -->
+                <video class="newspaperburger" id="a" width="30%" onmouseover="bigImg1()" onmouseout="normalImg1()" poster="v2.jpg" controls>
+                    <source src= "v2.mp4" type="video/mp4">
+                    Your browser does not support the video element. Kindly update
+                    it to the latest version.
+                    
+                </video>
+                <video class="newspaperburger" id="b" width="30%" onmouseover="bigImg()" onmouseout="normalImg()" poster="v1.jpg" controls>
+                        <source src= "v1.mp4" type="video/mp4">
+                        Your browser does not support the video element. Kindly update
+                        it to the latest version.
+                        
+                </video>
+            </div>
+            <center><a href="newspaper.html" id="hamburgernews">Learn More!</a></center>
+            
+
+
+        </div>
+        <script >
+            function wow(){
+                document.getElementById("b").style.paddingLeft = "17%";
+                document.getElementById("b").style.paddingRight = "17%";
+                document.getElementById("b").style.marginLeft = "10%";
+                document.getElementById("b").style.marginRight = "10%";
+                document.getElementById("b").style.width = "45%";
+            }
+            function wow1(){
+                document.getElementById("b").style.paddingLeft = "0";
+                document.getElementById("b").style.paddingRight = "0";
+                document.getElementById("b").style.marginLeft = "9%";
+                document.getElementById("b").style.marginRight = "9%";
+                document.getElementById("b").style.width = "30%";
+            }
+            function wow2(){
+                document.getElementById("a").style.paddingLeft = "17%";
+                document.getElementById("a").style.paddingRight = "17%";
+                document.getElementById("a").style.marginLeft = "10%";
+                document.getElementById("a").style.marginRight = "10%";
+                document.getElementById("a").style.width = "45%";
+                
+            }
+            function wow3(){
+                document.getElementById("a").style.paddingLeft = "0";
+                document.getElementById("a").style.paddingRight = "0";
+                document.getElementById("a").style.marginLeft = "9%";
+                document.getElementById("a").style.marginRight = "9%";
+                document.getElementById("a").style.width = "30%";
+            }
+            function wow4(){
+                document.getElementById("a").style.display = "inline";
+            }
+            function wow5(){
+                document.getElementById("b").style.display = "inline";
+            }
+            function bigImg() {
+                document.getElementById("a").style.display = "none";
+                setTimeout(wow, 500);
+            }
+
+            function normalImg() {
+                setTimeout(wow1, 500);
+                setTimeout(wow4,1000);
+            }
+            function bigImg1() {
+                document.getElementById("b").style.display = "none";
+                setTimeout(wow2, 500);
+            }
+
+            function normalImg1() {
+                setTimeout(wow3, 500);
+                setTimeout(wow5,1000);
+            }
+        </script>
+
+    </body>
+
+
+
+
+
+
+
+
+</html>
